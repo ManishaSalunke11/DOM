@@ -6,7 +6,7 @@ console.log(elementNameByClass[0].innerHTML);
 
 const elementH3 = document.querySelectorAll("p")
 console.log(elementH3[0].innerHTML);
-// document.getElementsByClassName();
+
 
 // querySelectorAll
 // querySelector
@@ -26,3 +26,9 @@ const elementsPara = document.querySelectorAll('p');
 for (const element of elementsPara) {
     console.log(element.innerHTML);
 }
+
+console.log(`======== document.querySelectorAll(".ceo")`);
+const elementsCeo = document.querySelectorAll(".ceo")
+elementsCeo.forEach( (element)=>{
+    console.log(element.innerHTML);
+} );
