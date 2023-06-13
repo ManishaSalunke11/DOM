@@ -30,9 +30,15 @@ for (const element of elementsPara) {
 console.log(`======== document.querySelectorAll(".ceo")`);
 const elementsCeo = document.querySelectorAll(".ceo")
 
+<<<<<<< HEAD
 elementsCeo.forEach((element) => {
     console.log(element.innerHTML);
 });
+=======
+elementsCeo.forEach( (element)=>{
+    console.log(element.innerHTML);
+} );
+>>>>>>> da208da46e8eeb51038624c7851385964cf272f9
 
 console.log(` Updating an element city`);
 const elementCity = document.querySelector("#city");
@@ -61,10 +67,18 @@ elementTimePass.appendChild(textNodeTimePass);
 elementHobbies.appendChild(elementTimePass);
 
 const elementContact = document.querySelector('#contact');
+<<<<<<< HEAD
 elementContact.addEventListener('click', () => {
     elementContact.style.color = 'green';
 });
 
 function show() {
+=======
+elementContact.addEventListener('click', ()=>{
+    elementContact.style.color = 'green';
+});
+
+function show(){
+>>>>>>> da208da46e8eeb51038624c7851385964cf272f9
     alert('show function called');
 }
