@@ -8,9 +8,20 @@
 </head>
 
 <body>
-    <a href="JavaScript:void(0);" onclick="alert('Well done!')">
-        Click Me!
-      </a>
+    <script type="text/javascript">
+        var count = 0;
+
+        function countVowels(name) {
+            for (i = 0; i <= name.length; i++) {
+                if (name[i] == "a" || name[i] == "e" || name[i] == "i" || name[i] == "o" || name[i] == "u")
+                    count = count + 1;
+            }
+            document.write(" Hello " + name + " your name has " + count + " vowels ");
+        }
+        var myName = prompt("please enter your name");
+        countVowels(myName);
+    </script>
+
 </body>
 
 </html>
